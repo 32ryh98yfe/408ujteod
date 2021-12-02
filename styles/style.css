@@ -1,0 +1,213 @@
+@font-face {
+  /*
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal; */
+
+
+  font-family: 'Minecraft-Regular';
+  src:  url('..//styles/Minecraft-Regular.ttf.woff') format('woff');
+}
+
+
+#qweqwe {width: 100%;
+z-index: -50;
+overflow: hidden;
+animation-duration: 3.5s;
+                animation-name: img;
+                animation-iteration-count: infinite;
+                opacity: 0;
+                }
+                @keyframes img {
+                0% {
+                opacity: 40%;
+                }
+                50%{
+                opacity: 100%;
+                }
+                100%{
+                opacity: 40%;
+                
+                }
+}
+
+
+/* modal overlay */
+#overlay { width:100%; 
+               height:100%; 
+               background:rgba(0, 0, 0, 0.795);
+               position:fixed;
+               top:0; left:0; 
+               z-index:20; 
+               visibility:hidden; 
+               opacity:0;   
+               transition:all 1s ease;
+              }
+
+/* modal box */
+.modal { 
+  display: contents !important;
+  z-index:21;
+  width:80%; 
+             background:#f5f5f5; 
+             margin:150px auto; }
+
+.modal_content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 530px;
+  height: 570px;
+  z-index: 10;
+  position: absolute;
+  padding: 30px;
+  background-image: url("..//img/iframe.png"); 
+}
+
+*/
+
+
+#wb{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 80%;
+  background-color: black;
+  z-index: 5;
+  position: absolute;
+  
+}
+
+#custom-cursor{
+  width: 779px;
+  height: 668px;
+  position: absolute;
+  background-size: 779px 668px;
+  background-image: url("..//img/hand2.png");
+  z-index: 100;
+}
+
+
+* {
+  font-family: 'Minecraft-Regular';
+  cursor: none;
+}
+
+#bkimg{
+  width: 100%;
+  z-index: -20;
+}
+/* overwrite css */
+
+
+.TTT{
+  color: #fff !important;
+  
+  font-size: 70px !important;
+  background-color: #00000000 !important;
+  border-color: #00000000 !important;
+  margin-top: 40px !important;
+  
+}
+
+.TTT1{
+  color: #fff !important;
+  
+  font-size: 70px !important;
+  background-color: #00000000 !important;
+  border-color: #00000000 !important;
+  margin-top: 40px !important;
+  
+}
+
+
+
+.TTT:hover {
+  color: rgb(122, 122, 122) !important;
+  /* background-color: #00000000 !important; */
+  border-color: #00000000!important;
+  margin-top: 40px !important;
+}
+
+.TTT1:hover {
+  color: rgb(122, 122, 122) !important;
+  /* background-color: #00000000 !important; */
+  border-color: #00000000!important;
+  margin-top: 40px !important;
+}
+
+/* overwrite css end */
+
+body{
+  max-height: fit-content;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+#randomize .btn-group {
+  position: absolute;
+  margin-top: 294px;
+  /* padding: 76px; */
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row{
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 992px;
+  height: 491px;
+  background-image: url("..//img/main.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: flex;
+  margin-bottom: 80px;
+  border:solid 5px #00000000;
+  background-color: #00000000;
+  padding: 30px 15px 30px 15px;
+}
+
+#randomize .row > div.col-sm-4 > div {
+  padding: 67px;
+  padding-top: 133px;
+  width: 291px;
+  height: 404px;
+  background: #00000000);
+  border: solid #00000000 5px;
+  border-radius: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+
+
+.randomizeMachine {
+  width: 150px;
+  height: 150px;
+}
+
+
+
+.machineResult {
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+  height: 50px !important;
+  background: transparent !important;
+  font-size: 18px;
+  padding: 10px !important;
+}
+
+
+.github-corner:hover .octo-arm{animation:octocat-wave 4000ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 3000ms ease-in-out}}
