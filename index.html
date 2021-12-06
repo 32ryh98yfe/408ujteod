@@ -17,6 +17,9 @@
     </head>
 
     <body>
+
+      <div id="snackbar">사이트 최초 접속시 새로고침 해주세요 😊</div>
+
       
 
      <img id="qweqwe" src="img/test.png">
@@ -109,6 +112,15 @@
               <audio id="myAudio1" src="rr.m4a"></audio>
               
               <script id="codeScript2">
+
+              window.onload = pageLoad;
+                  function pageLoad() {
+                  
+                    var x = document.getElementById("snackbar");
+                    x.className = "show";
+                    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+
+                  };
 
               
 
