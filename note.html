@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>일기장</title>
         <script src="js/jquery-3.6.0.js"></script>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         
         <style>
             @font-face {
@@ -39,7 +40,7 @@
                 opacity: 50%;
                 }
                 50%{
-                opacity: 80%;
+                opacity: 60%;
                 }
                 100%{
                 opacity: 50%;
@@ -170,15 +171,15 @@
             #testa{
                 margin-top: -102px;
                 margin-left: 68px;
-                font-size: 18pt;
+                font-size: 17pt;
                 color: white !important; 
                 text-decoration: none !important;
             }
 
             #testa1{
-                margin-top: -25px;
+                margin-top: -22px;
                 margin-left: 295px;
-                font-size: 18pt;
+                font-size: 17pt;
                 color: white !important; 
                 text-decoration: none !important;
             }
@@ -186,6 +187,7 @@
 
     </head>
     <body>
+        <audio id="myAudio" src="audio.wav"></audio>
         <img id="qweqwe" src="img/test1.png">
 
         <div id="custom-cursor"></div>
@@ -228,7 +230,7 @@
                     </span>
                     
                     <div id="testa" ><a href="index.html" style="color: white !important; text-decoration: none;">다시 돌리기</a></div>
-                    <div id="testa1" ><a href="http://notedd.iptime.org:8080/BBS/bbs.jsp" style="color: white !important; text-decoration: none;">일기 모음</a></div>
+                    <div id="testa1" ><a onclick="notice()" href="index.html"  style="color: white !important; text-decoration: none;">일기 모음</a></div>
                 </div>
             </div>
 
@@ -237,6 +239,10 @@
     </div>
 
     <script language = "javascript">
+        function notice(){
+            alert('이 웹사이트는 라이트 버전입니다. 일기 모음은 DB 구축 문제로 영구 보존이 어려워 제거됐습니다.');
+        }
+        document.getElementById('myAudio').play();
 		temp = location.href.split("?");
 		data=temp[1].split("/");
 		noteq = data[0];
